@@ -1,0 +1,91 @@
+:root {
+  --bg: linear-gradient(180deg, #9adcf3 0%, #b59fdc 100%);
+  --card: rgba(255, 255, 255, 0.95);
+  --muted: #6b7280;
+}
+.room-root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg);
+  color: #111827;
+  font-family: Inter, system-ui, Arial;
+}
+.room-header {
+  padding: 20px;
+}
+.room-creator {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: var(--card);
+  padding: 12px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+.avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: #7c3aed;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 20px;
+}
+.avatar.big {
+  width: 72px;
+  height: 72px;
+  font-size: 26px;
+}
+.room-info {
+  flex: 1;
+}
+.room-title {
+  font-weight: 700;
+  font-size: 16px;
+}
+.room-sub {
+  color: var(--muted);
+  font-size: 12px;
+}
+.room-actions {
+}
+.btn-join {
+  background: #10b981;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 12px;
+}
+.btn-leave {
+  background: #ef4444;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 12px;
+}
+.room-main {
+  padding: 24px;
+}
+.participants-grid {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.participant {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 96px;
+}
+.pname {
+  margin-top: 6px;
+  font-size: 13px;
+  text-align: center;
+}
+.empty {
+  color: var(--muted);
+}
